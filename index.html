@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="mx-auto w-9/12 bg-slate-300 mt-12">
+    <header>
+        <h1 class="text-center text-5xl text-black font-semibold">To Do List</h1>
+    </header>
+    <main>
+        <section>
+            <!-- input div -->
+            <div class="mt-5">
+                <input id="input-value" type="text" class="w-full">
+                <button id="btn-add" class="mx-auto mt-5 flex justify-center px-4 py-2 bg-sky-500 text-xl font-medium rounded-md text-white">Add Task</button>
+            </div>
+            <!-- table div -->
+            <div class="flex flex-col justify-center items-center">
+                <table id="table" class="table">
+                  <thead>
+                    <tr class="text-lg font-medium text-center">
+                      <th class="p-5">Number</th>
+                      <th class="p-5">Description</th>
+                      <th class="p-5">Delete</th>
+                      <th class="p-5">Done</th>
+                    </tr>
+                  </thead>
+                  <tbody id="content-container">
+                    <!-- <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                    </tr> -->
+                  </tbody>
+                </table>
+                <button id="btn-clear" class="mx-auto mt-5 flex justify-center px-4 py-2 bg-sky-500 text-xl font-medium rounded-md text-white">Clear All</button>
+              </div>
+            </div>
+        </section>
+    </main>
+    <!-- js file -->
+    <script src="script.js"></script>
+</body>
+</html>
